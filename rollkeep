@@ -1,12 +1,12 @@
 import random
 def rolagem(roll, keep):
-'''rola dados do sistema rollkeep, o primeiro valor � roll, o segundo � o keep
+'''rola dados do sistema rollkeep, o primeiro valor se refere a quantidade de dados rolados, o segundo a quantidade de dados mantidos 
 exemplos:
 rolagem(3,2)
 8,7,2
 15
 rolagem(4,1)
-15,6,6,1
+15,6,6,3
 15
 '''
     if roll >= keep and (roll > 0 and roll <11) and (keep > 0 and keep < 11):
