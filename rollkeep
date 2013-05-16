@@ -1,6 +1,6 @@
 import random
 def rolagem(roll, keep):
-'''rola dados do sistema rollkeep, o primeiro valor é roll, o segundo é o keep
+'''rola dados do sistema rollkeep, o primeiro valor ï¿½ roll, o segundo ï¿½ o keep
 exemplos:
 rolagem(3,2)
 8,7,2
@@ -14,6 +14,7 @@ rolagem(4,1)
         lista = []
         d = 0
         total = 0
+        
         while roll != 0:
             lista.append(random.randint(1, 10))
             roll = roll - 1
@@ -23,6 +24,7 @@ rolagem(4,1)
         while crits != 0:
             r = random.randint(1, 10)
             d = 10 + r
+            
             while r == 10:
                 r = random.randint(1, 10)
                 d = d + r
@@ -39,10 +41,8 @@ rolagem(4,1)
             lista.pop(0)
             keep = keep - 1
 
-        print (total)
-    
-         
-                          
-                       
+        print (total)  
+     
+           
     else:
         return('keep deve ser menor ou igual roll, roll e keep devem ser de 1 a 10')
